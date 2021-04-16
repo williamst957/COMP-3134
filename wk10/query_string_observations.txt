@@ -1,0 +1,19 @@
+1. 
+typed in "cat" in form
+url -> https://www.dictionary.com/browse/cat?s=t
+page refreshes, pulling up "cat" data
+
+2. 
+typed in gibberish after the '/browse/' section of URL
+url -> https://www.dictionary.com/misspelling?term=adasdasd
+page displays "No results found for adasdasd"
+
+3.
+type <script>alert(%27hello%27)</script> in form
+url -> https://www.dictionary.com/noresult?term=%3Cscript%3Ealert(%27hello%27)%3C%2Fscript%3E&s=ts
+page displays "Results for <script>alert('hello')</script>"
+
+4. 
+typed <script>alert(%27hello%27)</script> after the "term" section of URL
+url -> https://www.dictionary.com/noresult?term=%3Cscript%3Ealert(%27hello%27)%3C/script%3E
+page displays same as before

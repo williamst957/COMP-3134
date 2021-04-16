@@ -1,0 +1,19 @@
+1) Send a GET request to dictionary.com to search for the word “curl”
+
+curl https://dictionary.com/browse/curl
+
+2) Send a GET request to dictionary.com to search for the word “curlxyz”
+
+curl https://dictionary.com/browse/curlxyz
+
+3) Send a GET request to {Your droplet IP}/sending_info_to_app_1.php to submit the query “helloworld”
+
+curl -d "q=helloworld" http://138.197.140.18/sending_info_to_app_2.php
+
+4) Send a GET request to {Your droplet IP}/sending_info_to_app_1.php to submit the query “<script>document.write(‘overwrite_everything’)</script>”
+
+curl -d "q=<script>document.write(‘overwrite_everything’)</script>" http://138.197.140.18/sending_info_to_app_1.php
+
+5) Send a GET request to {Your droplet IP}/sending_info_to_app_2.php to submit the query “<script>document.write(‘overwrite_everything’)</script>”
+
+curl -d "q=<script>document.write(‘overwrite_everything’)</script>" http://138.197.140.18/sending_info_to_app_2.php

@@ -1,0 +1,5 @@
+Stripping tags:
+- removes html tags from input, like <p>, <script>, etc. 
+
+Displaying html entity 
+- converts characters into html entities, like "<" -> "&lt;" thus making tags unreadable by browser

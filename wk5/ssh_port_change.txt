@@ -1,0 +1,5 @@
+Restart the sshd service:
+service sshd restart
+
+Log into ssh service using the new port:
+ssh root@138.197.140.18 -p 2222

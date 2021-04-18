@@ -1,0 +1,10 @@
+When using the form in csfr_form.php:
+- the session variable is passed to csfr_action.php which, based on the validation in that file, 
+logs in the user and displays the success login message
+- if the session variable that was passed did not match the variable that was passed in the
+hidden field, the user would not be logged in 
+
+When using the form in csfr.html: 
+- this form does not have a hidden field containing a session variable; a session 
+variable is not passed to csfr_action.php thus the user is not logged in
+- no login message was displayed

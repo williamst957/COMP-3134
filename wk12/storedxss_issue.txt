@@ -1,0 +1,6 @@
+Issues:
+Without sanitizing the contents of the text file, the script in the file gets executed instead
+of being displayed as text. 
+In this case, the script redirects the browser to 'directory_traversal_part1.php' which lists
+all files found within that file's directory. 
+The user can see all files within the html folder and can even traverse up the directory.  
